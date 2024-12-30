@@ -16,8 +16,8 @@
 
 /* GENERAL STYLES */
 body, .appMount-3lHmkl {
-    background-color: var(--background);
-    color: var(--text-primary);
+    background-color: var(--background) !important;
+    color: var(--text-primary) !important;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -27,7 +27,7 @@ body, .appMount-3lHmkl {
     display: block;
     font-size: 18px;
     font-weight: bold;
-    color: var(--accent);
+    color: var(--accent) !important;
     text-align: center;
     padding: 10px;
     margin-bottom: 10px;
@@ -37,78 +37,78 @@ body, .appMount-3lHmkl {
 
 /* SIDEBAR */
 .container-2lgZY {
-    background: var(--background-secondary);
+    background: var(--background-secondary) !important;
     border-radius: 8px;
-    box-shadow: 0 4px 12px var(--shadow);
+    box-shadow: 0 4px 12px var(--shadow) !important;
 }
 
 .sidebar-2K8pFh {
-    background: var(--background-secondary);
-    color: var(--text-secondary);
-    border-right: 2px solid var(--accent);
+    background: var(--background-secondary) !important;
+    color: var(--text-secondary) !important;
+    border-right: 2px solid var(--accent) !important;
 }
 
 .sidebar-2K8pFh .header-23xsNx {
-    color: var(--accent);
+    color: var(--accent) !important;
     font-weight: bold;
 }
 
 .channel-1nA2BZ {
-    color: var(--text-secondary);
+    color: var(--text-secondary) !important;
 }
 
 .channel-1nA2BZ:hover {
-    color: var(--highlight);
+    color: var(--highlight) !important;
 }
 
 /* CHAT MESSAGES */
-.message-2qnXI6 {
-    background: var(--background-secondary);
-    border-left: 4px solid var(--accent);
+.message {
+    background: var(--background-secondary) !important;
+    border-left: 4px solid var(--accent) !important;
     padding: 10px;
     margin: 8px 0;
     border-radius: 5px;
-    transition: background 0.3s ease;
-    box-shadow: 0 4px 10px var(--shadow);
+    transition: background 0.3s ease !important;
+    box-shadow: 0 4px 10px var(--shadow) !important;
 }
 
-.message-2qnXI6:hover {
-    background: var(--highlight);
+.message:hover {
+    background: var(--highlight) !important;
 }
 
-.username-1A8OIy {
-    color: var(--accent);
-    font-weight: bold;
-    text-shadow: var(--glow);
+.username {
+    color: var(--accent) !important;
+    font-weight: bold !important;
+    text-shadow: var(--glow) !important;
 }
 
-.timestamp-3ZCmNB {
-    color: var(--text-secondary);
+.timestamp {
+    color: var(--text-secondary) !important;
 }
 
 /* BUTTONS */
 .button-1cRKG1 {
-    background-color: var(--accent);
+    background-color: var(--accent) !important;
     border-radius: 8px;
-    color: var(--text-primary);
-    box-shadow: 0 0 10px var(--accent);
-    transition: box-shadow 0.3s ease, background-color 0.3s ease;
-    padding: 5px 15px;
-    font-weight: bold;
+    color: var(--text-primary) !important;
+    box-shadow: 0 0 10px var(--accent) !important;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease !important;
+    padding: 5px 15px !important;
+    font-weight: bold !important;
 }
 
 .button-1cRKG1:hover {
-    background-color: var(--highlight);
-    box-shadow: 0 0 20px var(--highlight);
+    background-color: var(--highlight) !important;
+    box-shadow: 0 0 20px var(--highlight) !important;
 }
 
 /* SCROLLBARS */
 .scrollbar-3j8RhN {
-    background: var(--background);
+    background: var(--background) !important;
 }
 
 .scrollbar-3j8RhN:hover {
-    background: var(--highlight);
+    background: var(--highlight) !important;
 }
 
 /* GLOW EFFECT */
@@ -125,19 +125,19 @@ body, .appMount-3lHmkl {
 }
 
 .glow-text {
-    animation: glow 2s infinite;
+    animation: glow 2s infinite !important;
 }
 
 /* EMOJIS IN CHAT */
-.message-2qnXI6::before {
-    content: "💬 ";
-    font-size: 16px;
-    margin-right: 5px;
+.message::before {
+    content: "💬 " !important;
+    font-size: 16px !important;
+    margin-right: 5px !important;
 }
 
 /* GUILD ICONS HOVER */
 .guildsWrapper-3BY48a .guildIconWrapper-1OtyMM:hover {
-    box-shadow: var(--glow);
-    transform: scale(1.1);
-    transition: all 0.3s ease;
+    box-shadow: var(--glow) !important;
+    transform: scale(1.1) !important;
+    transition: all 0.3s ease !important;
 }

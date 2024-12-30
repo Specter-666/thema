@@ -62,27 +62,28 @@ body, .appMount-3lHmkl {
 }
 
 /* CHAT MESSAGES */
-.message {
+.message-2qnXI6, .message {
     background: var(--background-secondary) !important;
     border-left: 4px solid var(--accent) !important;
-    padding: 10px;
-    margin: 8px 0;
-    border-radius: 5px;
+    padding: 12px !important;
+    margin: 8px 0 !important;
+    border-radius: 8px !important;
     transition: background 0.3s ease !important;
-    box-shadow: 0 4px 10px var(--shadow) !important;
+    box-shadow: 0 4px 12px var(--shadow) !important;
+    font-size: 14px !important;
 }
 
-.message:hover {
+.message-2qnXI6:hover, .message:hover {
     background: var(--highlight) !important;
 }
 
-.username {
+.username-1A8OIy, .username {
     color: var(--accent) !important;
     font-weight: bold !important;
     text-shadow: var(--glow) !important;
 }
 
-.timestamp {
+.timestamp-3ZCmNB, .timestamp {
     color: var(--text-secondary) !important;
 }
 
@@ -129,7 +130,7 @@ body, .appMount-3lHmkl {
 }
 
 /* EMOJIS IN CHAT */
-.message::before {
+.message-2qnXI6::before, .message::before {
     content: "💬 " !important;
     font-size: 16px !important;
     margin-right: 5px !important;

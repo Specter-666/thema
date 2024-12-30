@@ -1,0 +1,105 @@
+/* Specter Theme for BetterDiscord */
+
+/* Root Variables */
+:root {
+  --background-color: #0d1117;
+  --foreground-color: #161b22;
+  --accent-color: #00d1b2;
+  --hover-color: #1f6feb;
+  --text-color: #c9d1d9;
+  --muted-text-color: #8b949e;
+  --border-color: #30363d;
+  --highlight-color: rgba(0, 209, 178, 0.3);
+  --font-family: 'Poppins', sans-serif;
+}
+
+/* General Styling */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+/* Chat Area */
+.container-1NXEtd {
+  background-color: var(--foreground-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+/* Messages */
+.message-2qnXI6 {
+  background: transparent;
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px;
+  transition: background 0.3s;
+}
+.message-2qnXI6:hover {
+  background: var(--highlight-color);
+}
+
+/* Scrollbar */
+.scrollbar-3dvm_9 {
+  background-color: var(--background-color);
+  width: 8px;
+}
+.scrollbar-thumb-3mND2p {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+/* Buttons */
+.button-1c6smY {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  border-radius: 4px;
+  transition: background 0.3s, transform 0.2s;
+}
+.button-1c6smY:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05);
+}
+
+/* Sidebar */
+.sidebar-2K8pFh {
+  background-color: var(--foreground-color);
+  border-right: 1px solid var(--border-color);
+}
+
+/* User List */
+.member-3-YXUe {
+  color: var(--text-color);
+}
+.member-3-YXUe:hover {
+  background: var(--highlight-color);
+}
+
+/* Input Field */
+.textArea-2Spzkt {
+  background-color: var(--foreground-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+.textArea-2Spzkt:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 8px var(--accent-color);
+}
+
+/* Animations */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px var(--accent-color);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--accent-color);
+  }
+  100% {
+    box-shadow: 0 0 5px var(--accent-color);
+  }
+}
+
+/* Glowing Effect on Hover */
+.button-1c6smY:hover {
+  animation: glow 1s infinite;
+}

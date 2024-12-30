@@ -1,27 +1,43 @@
-/* $pecter Dark Theme for VendCord */
-/* Sleek, dark, and stylish theme */
+/* Young$pecterOnTop Dark Theme for VendCord */
+/* Elegante, lleno de detalles y personalizado al máximo */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
     --background: #0d0f12;
     --background-secondary: #16191d;
-    --accent: #2b6cb0;
+    --accent: #9d50bb; /* $pecter Main Accent */
     --highlight: #5c94e1;
     --text-primary: #ffffff;
     --text-secondary: #c4c4c4;
     --shadow: rgba(0, 0, 0, 0.6);
-    --$pecter-accent: #9d50bb; /* Main accent color */
+    --glow: 0 0 10px var(--accent), 0 0 20px var(--accent);
 }
 
-/* General Background */
+/* GENERAL STYLES */
 body, .appMount-3lHmkl {
     background-color: var(--background);
     color: var(--text-primary);
     font-family: 'Roboto', sans-serif;
 }
 
-/* Sidebar Customization */
+/* CUSTOM TOP LEFT TEXT */
+.guildsWrapper-3BY48a::before {
+    content: "🚀 Young$pecterOnTop ✨";
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--accent);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--highlight);
+    text-shadow: var(--glow);
+}
+
+/* SIDEBAR */
 .container-2lgZY {
-    background-color: var(--background-secondary);
+    background: var(--background-secondary);
     border-radius: 8px;
     box-shadow: 0 4px 12px var(--shadow);
 }
@@ -29,14 +45,14 @@ body, .appMount-3lHmkl {
 .sidebar-2K8pFh {
     background: var(--background-secondary);
     color: var(--text-secondary);
+    border-right: 2px solid var(--accent);
 }
 
 .sidebar-2K8pFh .header-23xsNx {
-    color: var(--$pecter-accent);
+    color: var(--accent);
     font-weight: bold;
 }
 
-/* Channel List */
 .channel-1nA2BZ {
     color: var(--text-secondary);
 }
@@ -45,33 +61,40 @@ body, .appMount-3lHmkl {
     color: var(--highlight);
 }
 
-/* Chat Messages */
+/* CHAT MESSAGES */
 .message-2qnXI6 {
     background: var(--background-secondary);
-    border-left: 4px solid var(--$pecter-accent);
+    border-left: 4px solid var(--accent);
     padding: 10px;
     margin: 8px 0;
     border-radius: 5px;
-    transition: background 0.2s ease;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 10px var(--shadow);
 }
 
 .message-2qnXI6:hover {
     background: var(--highlight);
 }
 
-/* Username Styling */
 .username-1A8OIy {
-    color: var(--$pecter-accent);
+    color: var(--accent);
     font-weight: bold;
+    text-shadow: var(--glow);
 }
 
-/* Buttons */
+.timestamp-3ZCmNB {
+    color: var(--text-secondary);
+}
+
+/* BUTTONS */
 .button-1cRKG1 {
-    background-color: var(--$pecter-accent);
-    border-radius: 5px;
+    background-color: var(--accent);
+    border-radius: 8px;
     color: var(--text-primary);
-    box-shadow: 0 0 10px var(--$pecter-accent);
+    box-shadow: 0 0 10px var(--accent);
     transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    padding: 5px 15px;
+    font-weight: bold;
 }
 
 .button-1cRKG1:hover {
@@ -79,7 +102,7 @@ body, .appMount-3lHmkl {
     box-shadow: 0 0 20px var(--highlight);
 }
 
-/* Scrollbars */
+/* SCROLLBARS */
 .scrollbar-3j8RhN {
     background: var(--background);
 }
@@ -88,19 +111,33 @@ body, .appMount-3lHmkl {
     background: var(--highlight);
 }
 
-/* Glow Animations */
+/* GLOW EFFECT */
 @keyframes glow {
     0% {
-        box-shadow: 0 0 10px var(--$pecter-accent);
+        text-shadow: 0 0 5px var(--accent);
     }
     50% {
-        box-shadow: 0 0 20px var(--highlight);
+        text-shadow: 0 0 20px var(--highlight);
     }
     100% {
-        box-shadow: 0 0 10px var(--$pecter-accent);
+        text-shadow: 0 0 5px var(--accent);
     }
 }
 
-.glow-effect {
+.glow-text {
     animation: glow 2s infinite;
+}
+
+/* EMOJIS IN CHAT */
+.message-2qnXI6::before {
+    content: "💬 ";
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+/* GUILD ICONS HOVER */
+.guildsWrapper-3BY48a .guildIconWrapper-1OtyMM:hover {
+    box-shadow: var(--glow);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
